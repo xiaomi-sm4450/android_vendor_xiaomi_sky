@@ -212,6 +212,24 @@ android_app_import {
 }
 
 dex_import {
+	name: "QPerformance",
+	owner: "xiaomi",
+	jars: ["proprietary/system/framework/QPerformance.jar"],
+}
+
+dex_import {
+	name: "QXPerformance",
+	owner: "xiaomi",
+	jars: ["proprietary/system/framework/QXPerformance.jar"],
+}
+
+dex_import {
+	name: "UxPerformance",
+	owner: "xiaomi",
+	jars: ["proprietary/system/framework/UxPerformance.jar"],
+}
+
+dex_import {
 	name: "WfdCommon",
 	owner: "xiaomi",
 	jars: ["proprietary/system/framework/WfdCommon.jar"],
@@ -373,9 +391,9 @@ prebuilt_etc_xml {
 }
 
 prebuilt_etc_xml {
-	name: "android.hardware.thermal@2.0-service.qti",
+	name: "android.hardware.usb@1.2-service",
 	owner: "xiaomi",
-	src: "proprietary/vendor/etc/vintf/manifest/android.hardware.thermal@2.0-service.qti.xml",
+	src: "proprietary/vendor/etc/vintf/manifest/android.hardware.usb@1.2-service.xml",
 	filename_from_src: true,
 	sub_dir: "vintf/manifest",
 	soc_specific: true,
@@ -517,9 +535,18 @@ prebuilt_etc_xml {
 }
 
 prebuilt_etc_xml {
-	name: "vendor.qti.hardware.perf",
+	name: "vendor.qti.hardware.limits-service",
 	owner: "xiaomi",
-	src: "proprietary/vendor/etc/vintf/manifest/vendor.qti.hardware.perf.xml",
+	src: "proprietary/vendor/etc/vintf/manifest/vendor.qti.hardware.limits-service.xml",
+	filename_from_src: true,
+	sub_dir: "vintf/manifest",
+	soc_specific: true,
+}
+
+prebuilt_etc_xml {
+	name: "vendor.qti.hardware.perf2",
+	owner: "xiaomi",
+	src: "proprietary/vendor/etc/vintf/manifest/vendor.qti.hardware.perf2.xml",
 	filename_from_src: true,
 	sub_dir: "vintf/manifest",
 	soc_specific: true,
@@ -547,6 +574,24 @@ prebuilt_etc_xml {
 	name: "vendor.qti.hardware.servicetracker@1.2-service",
 	owner: "xiaomi",
 	src: "proprietary/vendor/etc/vintf/manifest/vendor.qti.hardware.servicetracker@1.2-service.xml",
+	filename_from_src: true,
+	sub_dir: "vintf/manifest",
+	soc_specific: true,
+}
+
+prebuilt_etc_xml {
+	name: "vendor.qti.memory.pasrmanager-service",
+	owner: "xiaomi",
+	src: "proprietary/vendor/etc/vintf/manifest/vendor.qti.memory.pasrmanager-service.xml",
+	filename_from_src: true,
+	sub_dir: "vintf/manifest",
+	soc_specific: true,
+}
+
+prebuilt_etc_xml {
+	name: "vendor.qti.qspmhal-service",
+	owner: "xiaomi",
+	src: "proprietary/vendor/etc/vintf/manifest/vendor.qti.qspmhal-service.xml",
 	filename_from_src: true,
 	sub_dir: "vintf/manifest",
 	soc_specific: true,
